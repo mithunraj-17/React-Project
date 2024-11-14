@@ -1,0 +1,94 @@
+/* General styles for the login container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6c63ff, #96e6a1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling the form */
+form {
+  background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative; /* Enables relative positioning for internal elements */
+}
+
+/* Styling the form elements */
+form h2 {
+  color: #2b2d42;
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2b2d42;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ef233c;
+}
+
+/* Styling the error message */
+.error {
+  color: #ef233c;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Styling the sign-up option text */
+.signup-option {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-option a {
+  color: #ef233c;
+  text-decoration: none;
+}
+
+.signup-option a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  form {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  form h2 {
+    font-size: 1.8rem;
+  }
+
+  form button {
+    font-size: 16px;
+  }
+
+  .signup-option {
+    font-size: 13px;
+  }
+}
